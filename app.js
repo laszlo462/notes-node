@@ -4,8 +4,8 @@ const fs = require('fs')
 const os = require('os')
 const notes = require('./notes.js')
 
-var sum = notes.add(27, 10)
-console.log(sum)
+// var sum = notes.add(27, 10)
+console.log('Result:', notes.add(12, 8))
 
 // var res = notes.addNote()
 // console.log(res)
