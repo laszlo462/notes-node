@@ -1,13 +1,24 @@
 console.log('Starting notes.js')
 
-module.exports.addNote = () => {
-    console.log('addNote')
-    return 'New note'
+var addNote = (title, body) => {
+    console.log('Adding note', title, body)
 }
 
-// Challenge to add new fuction in Section 3.10
-module.exports.add = (a, b) => {
-    console.log ('Attempting additon')
-    // var sum = a + b
-    return a + b
+var getAll = () => {
+    console.log('Getting all notes')
+}
+
+var readNote = (title) => {
+    console.log('Reading note', title)
+}
+
+var removeNote = (title) => {
+    console.log('Removing note', title)
+}
+
+module.exports = {
+    addNote,
+    getAll,
+    readNote,
+    removeNote
 }
